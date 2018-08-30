@@ -150,126 +150,32 @@
             <div class="col-md-12">
                 <div class="progress-wrapper">
 
-                    <div class="progress-item">
-                        <span class="progress-title">Ruby on Rails</span>
+                    <% skills = {
+                      'Ruby on Rails' => 95,
+                      'HTML/CSS' => 85,
+                      'Javascript' => 90,
+                      'PostgreSQL' => 85,
+                      'React' => 40,
+                      'React Native' => 40,
+                      'JSON API Spec' => 80,
+                      'TDD/BDD' => 90,
+                      'Java' => 80,
+                      'Android' => 80,
+                      'Amazon Web Services (AWS)' => 60
+                    } %>
+
+                    <% skills.each do |skill, level| %>
+                      <div class="progress-item">
+                        <span class="progress-title"><%= skill %></span>
 
                         <div class="progress">
-                            <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0"
-                                 aria-valuemax="100" style="width: 95%"><span class="progress-percent"> 95%</span>
-                            </div>
+                          <div class="progress-bar" role="progressbar" aria-valuenow="<%= level %>" aria-valuemin="0"
+                              aria-valuemax="100" style="width: <%= level %>%">
+                              
+                          </div>
                         </div>
-                        <!-- .progress -->
-                    </div>
-                    <!-- .skill-progress -->
-
-
-                    <div class="progress-item">
-                        <span class="progress-title">HTML/CSS</span>
-
-                        <div class="progress">
-                            <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0"
-                                 aria-valuemax="100" style="width: 85%"><span class="progress-percent"> 85%</span>
-                            </div>
-                        </div>
-                        <!-- /.progress -->
-                    </div>
-                    <!-- /.skill-progress -->
-
-
-                    <div class="progress-item">
-                        <span class="progress-title">Javascript</span>
-
-                        <div class="progress">
-                            <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0"
-                                 aria-valuemax="100" style="width: 80%;"><span class="progress-percent"> 80%</span>
-                            </div>
-                        </div>
-                        <!-- /.progress -->
-                    </div>
-                    <!-- /.skill-progress -->
-
-                    <div class="progress-item">
-                        <span class="progress-title">PostgreSQL</span>
-
-                        <div class="progress">
-                            <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0"
-                                 aria-valuemax="100" style="width: 80%;"><span class="progress-percent"> 80%</span>
-                            </div>
-                        </div>
-                        <!-- /.progress -->
-                    </div>
-                    <!-- /.skill-progress -->
-
-                    <div class="progress-item">
-                        <span class="progress-title">React</span>
-
-                        <div class="progress">
-                            <div class="progress-bar" role="progressbar" aria-valuenow="40" aria-valuemin="0"
-                                 aria-valuemax="100" style="width: 40%;"><span class="progress-percent"> 40%</span>
-                            </div>
-                        </div>
-                        <!-- /.progress -->
-                    </div>
-                    <!-- /.skill-progress -->
-
-                    <div class="progress-item">
-                        <span class="progress-title">JSON API Spec</span>
-
-                        <div class="progress">
-                            <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0"
-                                 aria-valuemax="100" style="width: 80%;"><span class="progress-percent"> 80%</span>
-                            </div>
-                        </div>
-                        <!-- /.progress -->
-                    </div>
-                    <!-- /.skill-progress -->
-
-                    <div class="progress-item">
-                        <span class="progress-title">TDD/BDD</span>
-
-                        <div class="progress">
-                            <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0"
-                                 aria-valuemax="100" style="width: 90%;"><span class="progress-percent"> 90%</span>
-                            </div>
-                        </div>
-                        <!-- /.progress -->
-                    </div>
-                    <!-- /.skill-progress -->
-
-                    <div class="progress-item">
-                        <span class="progress-title">Java</span>
-
-                        <div class="progress">
-                            <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0"
-                                 aria-valuemax="100" style="width: 80%;"><span class="progress-percent"> 80%</span>
-                            </div>
-                        </div>
-                        <!-- /.progress -->
-                    </div>
-                    <!-- /.skill-progress -->
-                    <div class="progress-item">
-                        <span class="progress-title">Android</span>
-
-                        <div class="progress">
-                            <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0"
-                                 aria-valuemax="100" style="width: 75%;"><span class="progress-percent"> 75%</span>
-                            </div>
-                        </div>
-                        <!-- .progress -->
-                    </div>
-                    <!-- .skill-progress -->
-                    <div class="progress-item">
-                        <span class="progress-title">Amazon Web Services (AWS)</span>
-
-                        <div class="progress">
-                            <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0"
-                                 aria-valuemax="100" style="width: 60%;"><span class="progress-percent"> 60%</span>
-                            </div>
-                        </div>
-                        <!-- .progress -->
-                    </div>
-                    <!-- .skill-progress -->
-
+                      </div>
+                    <% end %>
                 </div>
                 <!-- /.progress-wrapper -->
             </div>
@@ -294,7 +200,14 @@
                     <small>Jun 2017 - Present</small>
                     <h3>CTO</h3>
                     <h4>Waitlistr</h4>
-
+                    <small>Ruby on Rails, HTML/CSS, PostgreSQL, Twitter Bootstrap, Sidekiq, Heroku, Stripe, RSpec</small>
+                    <small class="description">
+                      <ul>
+                        <li>Fez uma parada</li>
+                        <li>Fez outra parada</li>
+                      </ul>
+                    </small>
+                    
                     <p>Pasadena, California (remote)</p>
                 </div>
                 <!-- .experience-item -->
@@ -302,7 +215,13 @@
                     <small>Dec 2017 - Present</small>
                     <h3>Lead Developer</h3>
                     <h4>Visit.org</h4>
-
+                    <small>Ruby on Rails, HTML/CSS, PostgreSQL, Twitter Bootstrap, Sidekiq, Heroku, RSpec</small>
+                    <small class="description">
+                      <ul>
+                        <li>Fez uma parada</li>
+                        <li>Fez outra parada</li>
+                      </ul>
+                    </small>
                     <p>New York, NY (remote)</p>
                 </div>
                 <!-- .experience-item -->
@@ -310,7 +229,13 @@
                     <small>Dec 2016 - Dec 2017</small>
                     <h3>Software Engineer</h3>
                     <h4>Holistic Hub (via Toptal)</h4>
-
+                    <small>Ruby on Rails, HTML/CSS, PostgreSQL, Twitter Bootstrap, Heroku, Stripe, React Native, RSpec</small>
+                    <small class="description">
+                      <ul>
+                        <li>Fez uma parada</li>
+                        <li>Fez outra parada</li>
+                      </ul>
+                    </small>
                     <p>London, United Kingdom (remote)</p>
                 </div>
                 <!-- .experience-item -->
@@ -318,7 +243,13 @@
                     <small>Sep 2016 - Nov 2016</small>
                     <h3>Software Engineer</h3>
                     <h4>Home Reserve (via Toptal)</h4>
-
+                    <small>Ruby on Rails, HTML/CSS, PostgreSQL, Foundation</small>
+                    <small class="description">
+                      <ul>
+                        <li>Fez uma parada</li>
+                        <li>Fez outra parada</li>
+                      </ul>
+                    </small>
                     <p>London, United Kingdom (remote)</p>
                 </div>
                 <!-- .experience-item -->
@@ -326,7 +257,13 @@
                     <small>Aug 2016 - Sep 2016</small>
                     <h3>Software Engineer</h3>
                     <h4>United Hospital Fund of New York (via Toptal)</h4>
-
+                    <small>Ruby on Rails, HTML/CSS, PostgreSQL, Twitter Bootstrap</small>
+                    <small class="description">
+                      <ul>
+                        <li>Fez uma parada</li>
+                        <li>Fez outra parada</li>
+                      </ul>
+                    </small>
                     <p>London, United Kingdom (remote)</p>
                 </div>
                 <!-- .experience-item -->
@@ -334,7 +271,13 @@
                     <small>Jan 2013 - Jul 2016</small>
                     <h3>Software Engineer</h3>
                     <h4>Seekr</h4>
-
+                    <small>Ruby on Rails, HTML/CSS, PostgreSQL, Amazon Web Services (AWS), Sidekiq, Facebook API, Instagram API, Twitter API</small>
+                    <small class="description">
+                      <ul>
+                        <li>Fez uma parada</li>
+                        <li>Fez outra parada</li>
+                      </ul>
+                    </small>
                     <p>Blumenau, SC, Brazil</p>
                 </div>
                 <!-- .experience-item -->
@@ -342,7 +285,13 @@
                     <small>Sep 2009 - Jan 2013</small>
                     <h3>Developer</h3>
                     <h4>Valicode</h4>
-
+                    <small>Java, PostgreSQL, Android</small>
+                    <small class="description">
+                      <ul>
+                        <li>Fez uma parada</li>
+                        <li>Fez outra parada</li>
+                      </ul>
+                    </small>
                     <p>Blumenau, SC, Brazil</p>
                 </div>
                 <!-- .experience-item -->

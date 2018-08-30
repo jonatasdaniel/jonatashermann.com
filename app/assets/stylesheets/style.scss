@@ -463,6 +463,15 @@ button:focus,
     margin-bottom : 40px;
     }
 
+.content-item {
+  .description {
+    ul {
+      list-style-type: circle;
+      padding-left: 25px;
+    }
+  }
+}
+
 .content-item h3 {
     margin         : 0 0 10px;
     line-height    : 1;
